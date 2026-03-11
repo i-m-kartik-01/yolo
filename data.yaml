@@ -1,0 +1,18 @@
+path: all_data
+
+train: images/train
+val: images/val
+
+names:
+  0: apple
+  1: cat
+  2: chair
+  3: dining_table
+  4: dog
+  5: face
+  6: number_plate
+  7: parcel_box
+  8: qr
+  9: bicycle
+  10: motorbike
+  11: car

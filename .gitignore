@@ -1,0 +1,16 @@
+# Virtual Environment
+yolo_env/
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Dataset and Models (Keep these local to save GitHub space)
+all_data/
+datasets/
+runs/
+*.pt
+
+# System files
+.DS_Store
