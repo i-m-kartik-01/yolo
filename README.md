@@ -4,12 +4,6 @@ This repository contains a custom-trained YOLOv8 object detection system designe
  # Key Features
 12-Class Detection: Detects faces, cars, motorbikes, dogs, cats, and more.
 
-Smart QR vs. Plate Logic: Uses aspect-ratio analysis to resolve common misidentifications between square QR codes and rectangular number plates.
-
-Live QR Scanning: Automatically crops and decodes QR code data using pyzbar.
-
-Hardware Optimized: Designed to run on NVIDIA RTX 3050 (Laptop) using CUDA acceleration.
-
 # Setup & Installation
 Clone the repository:
 
@@ -53,4 +47,5 @@ train.py: Training script for YOLOv8n.
 data.yaml: Configuration for dataset paths and class names.
 
 annotate.py / label_data.py: Helper scripts for dataset preparation.
+
 
