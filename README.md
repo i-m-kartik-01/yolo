@@ -34,11 +34,6 @@ Bash
 ```
 python predict.py
 ```
-
-Bash
-```
-python train.py
-```
 # Project Structure
 predict.py: Main script for live webcam detection and QR scanning.
 
@@ -47,5 +42,6 @@ train.py: Training script for YOLOv8n.
 data.yaml: Configuration for dataset paths and class names.
 
 annotate.py / label_data.py: Helper scripts for dataset preparation.
+
 
 
