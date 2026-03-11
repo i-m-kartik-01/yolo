@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriti 2026 Bot Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #1a1a2e; color: white; text-align: center; }
+        .container { margin-top: 50px; }
+        .feed { border: 5px solid #0f3460; border-radius: 10px; width: 80%; max-width: 800px; }
+        .stats { margin-top: 20px; font-size: 1.2em; display: flex; justify-content: center; gap: 50px; }
+        .box { background: #16213e; padding: 20px; border-radius: 8px; min-width: 200px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Kriti 2026 Perception Dashboard</h1>
+        
+        <img src="{{ url_for('video_feed') }}" class="feed">
+
+        <div class="stats">
+            <div class="box">
+                <h3>Identified Object</h3>
+                <p id="object-name">Scanning...</p>
+            </div>
+            <div class="box">
+                <h3>Uptime Timer</h3>
+                <p id="timer">00:00:00</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple timer logic
+        let seconds = 0;
+        setInterval(() => {
+            seconds++;
+            let hrs = Math.floor(seconds / 3600);
+            let mins = Math.floor((seconds - (hrs * 3600)) / 60);
+            let secs = seconds % 60;
+            document.getElementById('timer').innerText = 
+                `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }, 1000);
+    </script>
+</body>
+</html>

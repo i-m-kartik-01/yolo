@@ -3,7 +3,7 @@ import torch
 from ultralytics import YOLO
 
 # Load your model
-model = YOLO("runs/detect/train9/weights/best.pt")
+model = YOLO("runs/detect/train14/weights/best.pt")
 
 # Define our problematic class indices from your data.yaml
 PLATE_CLS = 6
