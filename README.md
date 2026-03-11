@@ -1,7 +1,7 @@
-** YOLOv8 Real-Time Multi-Class Bot (Kriti 2026)
+## YOLOv8 Real-Time Multi-Class Bot (Kriti 2026)
 This repository contains a custom-trained YOLOv8 object detection system designed for real-time inference via webcam. It features specialized logic for differentiating between QR codes and license plates, and includes live QR data decoding.
 
- * Key Features
+ # Key Features
 12-Class Detection: Detects faces, cars, motorbikes, dogs, cats, and more.
 
 Smart QR vs. Plate Logic: Uses aspect-ratio analysis to resolve common misidentifications between square QR codes and rectangular number plates.
@@ -10,7 +10,7 @@ Live QR Scanning: Automatically crops and decodes QR code data using pyzbar.
 
 Hardware Optimized: Designed to run on NVIDIA RTX 3050 (Laptop) using CUDA acceleration.
 
-🛠️ Setup & Installation
+# Setup & Installation
 Clone the repository:
 
 Bash
@@ -25,7 +25,7 @@ Install Dependencies:
 
 Bash
 pip install ultralytics opencv-python torch torchvision pyzbar numpy
-🖥️ Usage
+# Usage
 Running Live Inference
 To start the webcam feed with the custom remapping logic and QR decoding, run:
 
@@ -36,7 +36,7 @@ If you need to retrain the model with your custom data.yaml:
 
 Bash
 python train.py
-📂 Project Structure
+# Project Structure
 predict.py: Main script for live webcam detection and QR scanning.
 
 train.py: Training script for YOLOv8n.
@@ -45,7 +45,7 @@ data.yaml: Configuration for dataset paths and class names.
 
 annotate.py / label_data.py: Helper scripts for dataset preparation.
 
-🎓 Academic Context
+# Academic Context
 Developed as part of a B.Tech Project at the Indian Institute of Technology Guwahati (IITG). The project focuses on integrating computer vision with embedded systems (Arduino/PID control).
 
 Next Steps
