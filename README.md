@@ -41,7 +41,20 @@ train.py: Training script for YOLOv8n.
 
 data.yaml: Configuration for dataset paths and class names.
 
+## Live Feed Sharing (via ngrok)
+This project uses ngrok to create a secure tunnel from your local development environment to the internet. This allows you to share your real-time YOLO detection dashboard with anyone, anywhere, without deploying to a cloud server.
+
+1. Prerequisites
+Account: Sign up for a free account at ngrok.com.
+
+Installation: * Windows: Install via the Microsoft Store or download the ZIP.
+
+Linux/Pi: sudo apt install ngrok.
+
+Flask Configuration: Your app.py must be set to listen on all interfaces:
+
 annotate.py / label_data.py: Helper scripts for dataset preparation.
+
 
 
 
